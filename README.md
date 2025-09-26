@@ -36,26 +36,15 @@ This project predicts concentrations of gases (CO, CO2, SO2, NO2, CH4) from BME6
 
 
 
-\## Project Structure
-
-Predict\_gas\_concentration.ipynb # Notebook for testing and inference
-
+Predict_gas_concentration.ipynb # Notebook for testing and inference
 train.csv # Dataset used for training
-
-models/ # Folder containing trained models \& scaler
-
-gas\_model.h5 # Keras model
-
-gas\_model.keras # Keras native format model
-
-gas\_model\_int8.tflite # Quantized TFLite model
-
-gas\_model\_int8.cc # C array for MCU deployment
-
-scaler\_params.npz # Input scaler parameters
-
+models/ # Folder containing trained models & scaler
+├── gas_model.h5 # Keras model
+├── gas_model.keras # Keras native format model
+├── gas_model_int8.tflite # Quantized TFLite model
+├── gas_model_int8.cc # C array for MCU deployment
+└── scaler_params.npz # Input scaler parameters
 README.md # Project description
-
 
 
 \## Usage
@@ -76,8 +65,8 @@ README.md # Project description
 
 
 
-\## Notes
 
-\- The BME688 sensor provides indirect gas readings; the model converts them to actual gas concentration estimates.
-
-\- TinyML model is fully quantized for efficient MCU deployment.
+**Notes:**  
+- Keep each item on its own line.  
+- Two spaces at the end of a line (`  `) forces a line break in Markdown.  
+- The `├──` and `└──` characters make it look like a folder tree.
