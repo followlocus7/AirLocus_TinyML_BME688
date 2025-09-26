@@ -35,7 +35,7 @@ This project predicts concentrations of gases (CO, CO2, SO2, NO2, CH4) from BME6
 This project predicts concentrations of gases (CO, CO2, SO2, NO2, CH4) from BME688 sensor readings using TinyML. The sensor provides raw environmental data (temperature, humidity, pressure, gas resistance), and a trained neural network estimates actual gas concentrations.
 
 
-
+```
 Predict_gas_concentration.ipynb # Notebook for testing and inference
 train.csv # Dataset used for training
 models/ # Folder containing trained models & scaler
@@ -45,6 +45,7 @@ models/ # Folder containing trained models & scaler
 ├── gas_model_int8.cc # C array for MCU deployment
 └── scaler_params.npz # Input scaler parameters
 README.md # Project description
+```
 
 
 \## Usage
